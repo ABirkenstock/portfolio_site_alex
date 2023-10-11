@@ -52,3 +52,57 @@ img {
   }
 
 }
+
+
+a {
+  color: #beaf88;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #a59671;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:visited { /* visited link */
+  color: #d4b770;
+}
+a:active { /* selected link */
+  color: #c8c0aa;
+}
+
+
+.button {
+  display: inline-block; 
+  background-color: #beaf88;
+  color: #1a1a1a; 
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #a59671;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  display: inline-block; 
+  background-color: #beaf88;
+  color: #1a1a1a; 
+  font-weight: 400;
+  padding: 11px;
+  border-radius: 3px;
+  border-bottom: 2px solid #a59671;
+  transition: 0.2s opacity;
+}
+
+
+.button.contact {
+  background-color: transparent;
+  color: #beaf88;
+  border: 1px solid #e3e3de;
+  padding: 3px;
+
+}
+
+.button.contact:hover {
+  background-color: #1a1a1a;
+  color: #a59671;
+}
