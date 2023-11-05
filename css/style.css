@@ -146,3 +146,79 @@ header {
 }
 
 
+header {
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+
+nav > ul > li > a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+
+}
+
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #4a4a4a;
+}
+
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid whitesmoke;
+  color: #565656;
+}
+
+nav {
+  display: inline-block; width: 100%
+  
+}
+
+#nav {
+  position: relative;
+}
+.css-box-shadow{
+  /*start ------------*/
+  width: [object Object]px; 
+  height: [object Object]px; 
+  background: #1a1a1a; 
+  border: solid #1a1a1a 1px; 
+  box-shadow: -2px 5px 39px rgba(0, 0, 0, 0.5)  ; 
+  -webkit-box-shadow: -2px 5px 39px rgba(0, 0, 0, 0.5)  ; 
+  -moz-box-shadow: -2px 5px 39px rgba(0, 0, 0, 0.5)  ; 
+}
+
+
+#hero {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%; 
+}
+
+main {
+  padding-top: 133px;
+}
