@@ -9,6 +9,9 @@ Accent Color (Gold): beaf88
 
 
 
+* {
+  box-sizing: border-box;
+}
 
 
 body {
@@ -71,6 +74,19 @@ a:active { /* selected link */
 }
 
 
+header {
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 .button {
   display: inline-block; 
   background-color: #beaf88;
@@ -106,3 +122,27 @@ a:active { /* selected link */
   background-color: #1a1a1a;
   color: #a59671;
 }
+
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#hero h1 {
+  text-align: center; 
+}
+
+
+.logo {
+  max-width: 250px;
+}
+
+
