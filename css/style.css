@@ -130,6 +130,8 @@ a:active { /* selected link */
 
 
 
+
+
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 
@@ -140,7 +142,6 @@ a:active { /* selected link */
 
 
 header {
-  margin: 20px;
   text-align: center;
   padding: 10px 0;
   border: solid #1a1a1a 1px; 
@@ -148,7 +149,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 5;
-  background-color: 1a1a1a;
+  background-color: #1a1a1a
   
 }
 
@@ -215,8 +216,9 @@ main {
 #hero {
   background-color: #1a1a1a;
   padding: 20px 0;
-  display: inline-block;
+  display: flex;
   width: 100%; 
+
 }
 
 #hero h1 {
@@ -224,13 +226,39 @@ main {
 }
 
 
+
+
+
 /*footer*/
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer > ul > li {
+  display: inline-block;
+}
+footer > ul > li > a > img {
+  max-width: 50px;
+}
+
+
 
 
 /*animation*/
 
 
 /*media queries*/
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
 
 @media only screen and (min-width: 640px) {
 
@@ -240,5 +268,36 @@ main {
     margin: 0 auto;
   }
 
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
 }
