@@ -84,7 +84,6 @@ a:active { /* selected link */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #a59671;
   transition: 0.2s opacity;
 }
 
@@ -93,16 +92,19 @@ a:active { /* selected link */
   background-color: #beaf88;
   color: #1a1a1a; 
   font-weight: 400;
-  padding: 11px;
+  padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #a59671;
   transition: 0.2s opacity;
+}
+
+.button:visited {
+  color: #1a1a1a;
 }
 
 
 .button.contact {
   background-color: transparent;
-  color: #beaf88;
+  color: #1a1a1a;
   border: 1px solid #e3e3de;
   padding: 3px;
 
@@ -216,7 +218,7 @@ main {
 #hero {
   background-color: #1a1a1a;
   padding: 20px 0;
-  display: flex;
+  display: block;
   width: 100%; 
 
 }
@@ -224,6 +226,17 @@ main {
 #hero h1 {
   text-align: center; 
 }
+
+
+.project-card {
+  padding: 20px;
+  display: flexbox;
+
+
+
+}
+
+
 
 
 
