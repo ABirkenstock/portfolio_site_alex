@@ -104,8 +104,7 @@ a:active { /* selected link */
 
 .button.contact {
   background-color: transparent;
-  color: #1a1a1a;
-  border: 1px solid #e3e3de;
+  color: #beaf88;
   padding: 3px;
 
 }
@@ -223,7 +222,7 @@ main {
 
 }
 
-#hero h1 {
+.hero h1 {
   text-align: center; 
 }
 
@@ -258,7 +257,9 @@ main {
   display: inline-block;
 }
 .footer > ul > li > a > img {
-  max-width: 50px;
+  max-width: 30px;
+  padding: 5px
+
 }
 
 
