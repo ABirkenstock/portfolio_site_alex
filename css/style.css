@@ -243,21 +243,21 @@ main {
 
 
 /*footer*/
-footer {
+.footer {
   background-color: #1a1a1a;
   text-align: center;
   padding: 10px 0;
 }
 
-footer > ul {
+.footer > ul {
   list-style-type: none;
   padding: 0;
 }
 
-footer > ul > li {
+.footer > ul > li {
   display: inline-block;
 }
-footer > ul > li > a > img {
+.footer > ul > li > a > img {
   max-width: 50px;
 }
 
