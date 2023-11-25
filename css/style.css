@@ -214,24 +214,21 @@ main {
   padding-top: 133px;
 }
 
-#hero {
+.hero {
   background-color: #1a1a1a;
-  padding: 20px 0;
-  display: block;
-  width: 100%; 
+  
 
 }
 
-.hero h1 {
-  text-align: center; 
-}
 
 
+
+
+/*project section*/
 .project-card {
-  padding: 20px;
-  display: flexbox;
-
-
+display: flex;
+flex-direction: column;
+margin-bottom: 15px;
 
 }
 
@@ -249,15 +246,16 @@ main {
   padding: 10px 0;
 }
 
-.footer > ul {
+.footer ul {
   list-style-type: none;
   padding: 0;
 }
 
-.footer > ul > li {
+.footer ul li {
   display: inline-block;
 }
-.footer > ul > li > a > img {
+.footer ul li a img {
+  
   max-width: 30px;
   padding: 5px
 
@@ -277,8 +275,13 @@ Medium devices (640px and larger)
 
 @media only screen and (min-width: 640px) {
 
+
+  .nav-header .container {
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
   .container {
-    padding: 0 0px;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -293,6 +296,10 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+
+
+
+
 }
 
 
@@ -301,6 +308,35 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+
+
+  .hero {
+    background-color: #1a1a1a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%; 
+    column-gap: 20px;
+  
+  }
+
+  .hero img {
+    width: 30vw;
+    max-width: 4ovw
+    justify-content: center;
+    
+
+
+  }
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+  
+
+  
 }
 
 
@@ -308,6 +344,9 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+ 
+  
+
 }
 
 
@@ -315,4 +354,6 @@ X-large devices (1440px or larger)
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
+
+
 }

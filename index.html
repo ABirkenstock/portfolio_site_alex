@@ -20,7 +20,7 @@
     </head>
        
     <body>
-        <header>
+        <header class="nav-header">
             <div class="container">
                 <img class="logo" src="img/logo.svg" alt="Alex Birkenstock" >
                 <nav>
@@ -37,24 +37,25 @@
         </header>
 
         <main>
-            <div id="Hero" class="container"> <!--Hero section-->
-                <div class="hero">
+            <div class="container hero"> <!--Hero section-->
+                <div>
                     <div>
                         <h1>Hey there,<br>
                         <span>I'm Alex</span></h1>
                     </div>
-                    <div> <picture>
-                        <source srcset="img/Portrait_1x.png"
-                        media="(max-width:767px)">
-                        <img src="img/Portrait_2x.png" alt="portrait of Alex">
-                    </picture></div>
-
-                </div>
                     <div><p>I'm a product designer based in Berlin, Germany. <br>
                         I'm passionate about crafting emotion-driven user stories 
                         and delivering exceptional user experiences</p></div>
                         <div><a href="https://www.linkedin.com/in/alex-birkenstock">My LinkedIn</a></div>
                  
+
+                </div>
+                   
+                        <div> <picture>
+                            <source srcset="img/Portrait_1x.png"
+                            media="(max-width:767px)">
+                            <img src="img/Portrait_2x.png" alt="portrait of Alex">
+                        </picture></div>
             </div>
             <div class="container">
             <div> <!--about section-->
@@ -72,14 +73,15 @@
             <div> <!--Project section-->
                 <div id="projects">  
                    <h2>My Projects</h2> 
+                   <div class id="project-wrapper">
                    <div class="project-card"> <!--Project 1-->
-                        <div><!--Column 1-->
+                        <div class="project-card--picture"><!--Column 1-->
                             <Picture>
                             <source srcset="img/PlutoPay_1x.jpg" media="(max-width:767px)">
                             <img src="img/PlutoPay_2x.jpg" alt="project picture">
                             </Picture>
                         </div>
-                        <div><!--Column 2-->
+                        <div class="project-card--text"><!--Column 2-->
                             <h3>Pluto Pay - Case Study</h3>
                             <p>Discover the power of PlutoPay, the ultimate banking and wallet app that puts you in the driver’s seat of your financial journey. We’ve partnered with banks to uncover hidden fees and expose dark patterns, ensuring that you stay informed and in control.
 
@@ -90,17 +92,19 @@
                    </div>
 
                    <div class="project-card"><!--Project 2-->
-                    <div><!--Column 1-->
+                    <div class="project-card--picture"><!--Column 1-->
                         <Picture>
                             <source srcset="img/Kinderbuchseminar_1x.jpg" media="(max-width:767px)">
                             <img src="img/Kinderbuchseminar_2x.jpg" alt="project picture">
                             </Picture>
                     </div>
-                    <div><!--Column 2-->
+                    <div class="project-card--text"><!--Column 2-->
                         <h3>Kinderbuchseminar - <br>
                             Responsive One Pager</h3>
                         <p>I worked closely with the founders of this project and developed a streamlined sign-up process that prioritized accessibility and delivered a seamless experience for users. Thorough user research, I identified an optimal user flow, ensuring intuitive navigation and ease of use. </p>
                         <a href="http://kinderbuchseminar.de/" target="_blank">View website here</a>
+                    </div>
+
                     </div>
                     
                    </div>
@@ -133,7 +137,9 @@
                 </div>
             </div>
         </footer>
+        <script src="js/scripts.js"></script>
     </body>
+
 
 
 
