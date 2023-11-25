@@ -84,7 +84,8 @@ a:active { /* selected link */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover {
@@ -94,7 +95,8 @@ a:active { /* selected link */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  opacity: 0.8;
+
 }
 
 .button:visited {
@@ -237,7 +239,6 @@ margin-bottom: 15px;
 
 
 
-
 /*footer*/
 
 .footer {
@@ -265,6 +266,45 @@ margin-bottom: 15px;
 
 
 /*animation*/
+
+
+@keyframes color-change {
+  0% {fill: #e8ed55;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
 
 /*media queries*/
