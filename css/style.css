@@ -145,29 +145,47 @@ a:active { /* selected link */
 
 
 header {
-  text-align: center;
   padding: 10px 0;
   border: solid #1a1a1a 1px; 
   box-shadow: -2px 5px 39px rgba(0, 0, 0, 0.5); 
   position: fixed;
   width: 100%;
   z-index: 5;
-  background-color: #1a1a1a
-  
+  background-color: #1a1a1a;
+  padding: 10px 0 6px;
+  align-items:center
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
+
+
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
+
 
 
 nav > ul > li > a {
@@ -201,19 +219,32 @@ nav > ul > li > a:visited {
   color: #565656;
 }
 
-nav {
-  display: inline-block; width: 100%
-  
-}
 
 #nav {
   position: relative;
 }
 
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(82, 82, 82, 0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 
 /*main*/
 main {
-  padding-top: 133px;
+  padding-top: 60px;
 }
 
 .hero {
@@ -319,12 +350,36 @@ Medium devices (640px and larger)
 
 @media only screen and (min-width: 640px) {
 
+  .logo {
+    max-width: 250px;
+  }
 
   .nav-header .container {
     display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: baseline;
   }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  main {
+    padding-top: 133px;
+  }
+  
   .container {
     max-width: 1200px;
     margin: 0 auto;
