@@ -220,7 +220,11 @@ main {
   background-color: #1a1a1a;
   
 
-}
+} .hero img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-top: 20px;
+}v
 
 
 
@@ -375,6 +379,17 @@ Large devices (1024px or larger)
     column-gap: 20px;
   }
   
+
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line on smaller screens */
+    margin: -15px; /* Add negative margin to compensate for padding on columns */
+}
+
+.column {
+    flex: 1;
+    padding: 15px; /* Add padding to columns */
+}
 
   
 }
