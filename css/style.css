@@ -60,19 +60,19 @@ img {
 
 
 a {
-  color: #171717;
+  color: #beaf88;
   text-decoration: none; /* No underlining */
 }
 a:hover {
-  color: #171717;
+  color: #9c8f6e;
   text-decoration: underline;  /* Underlining when hovering over a link */
 }
 
 a:visited { /* visited link */
-  color: #171717;
+  color: #92825b;
 }
 a:active { /* selected link */
-  color: #171717;
+  color: #d6bf84;
 }
 
 
