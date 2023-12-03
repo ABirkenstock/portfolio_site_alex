@@ -60,19 +60,19 @@ img {
 
 
 a {
-  color: #beaf88;
+  color: #171717;
   text-decoration: none; /* No underlining */
 }
 a:hover {
-  color: #a59671;
+  color: #171717;
   text-decoration: underline;  /* Underlining when hovering over a link */
 }
 
 a:visited { /* visited link */
-  color: #d4b770;
+  color: #171717;
 }
 a:active { /* selected link */
-  color: #c8c0aa;
+  color: #171717;
 }
 
 
@@ -153,11 +153,13 @@ header {
   z-index: 5;
   background-color: #1a1a1a;
   padding: 10px 0 6px;
-  align-items:center
+  align-items: center;
 }
 
 .logo {
   max-width: 150px;
+  align-items: center;
+  margin-top: 5px;
 }
 
 
@@ -242,6 +244,9 @@ nav > ul > li > a:visited {
 }
 
 
+  
+
+
 /*main*/
 main {
   padding-top: 60px;
@@ -267,6 +272,57 @@ display: flex;
 flex-direction: column;
 margin-bottom: 15px;
 
+}
+
+
+/*project page*/
+
+.container_p {
+padding-left: 3%;
+padding-right: 3%;
+
+}
+
+
+.summary_cards {
+display: flex;
+flex-direction: column;
+text-align: center;
+
+
+}
+.sum_card {
+  background-color: #4a4a4a;
+  padding: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+  margin: 16px;
+  display: block;
+ min-height: 16em;
+ border-radius: 10%;
+
+}
+
+
+/*about page*/
+
+.about-split {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.split-element {
+  padding: 25px;
+  margin-left: 15px;
+  margin-top: 15px;
+background-color: #4a4a4a;
+border-radius: 5%;
+}
+
+
+.split-element .download{
+align-items: center;
 }
 
 
@@ -396,9 +452,35 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  .container_p {
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    }
+
+  .summary_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+  }
+
+  .sum_card {
+   min-height: 20em;
+max-width: 40vw;
+  
+  }
 
 
 
+  .navtoggle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    }
+  
+    
 }
 
 
@@ -441,12 +523,47 @@ Large devices (1024px or larger)
     margin: -15px; /* Add negative margin to compensate for padding on columns */
 }
 
+.container_p {
+  padding-left: 10%;
+  padding-right: 10%;
+  
+  }
+
 .column {
     flex: 1;
     padding: 15px; /* Add padding to columns */
 }
 
+.sum_card {
+  min-height: 18em;
+  max-width: 35vw;
+ }
   
+
+ .about-split {
+  display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+  
+  
+}
+
+.split-element {
+  padding: 25px;
+  margin-left: 15px;
+  margin-top: 15px;
+background-color: #4a4a4a;
+border-radius: 5%;
+min-width: 30vw;
+max-width: 40vw;
+
+
+}
+
+
+
+
+
 }
 
 
@@ -455,7 +572,16 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
  
-  
+ 
+  .sum_card {
+    min-height: 18em;
+    max-width: 29vw;
+   }
+
+  .container_p {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 
 }
 

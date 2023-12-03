@@ -18,36 +18,36 @@
 
  <link rel="stylesheet" href="css/style.css">
 
+ <script src="https://kit.fontawesome.com/03340777f9.js" crossorigin="anonymous"></script>
 
     </head>
        
     <body>
-        <header>
-            <div>
-                <div class="container">
-                    <div class="logo">
-                        <img src="img/PlutoPay.svg" alt="Pluto Pay" >
-                    </div>
-                </div>
-               
+        <header class="nav-header">
+            <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
+                    <img class="logo" src="img/PlutoPay.svg" alt="PlutoPay" >
+              
                 <nav>
                     <ul>
-
-                        <li><a href="#">Emphathize</a></li>
-                        <li><a href="#">Define</a></li>
-                        <li><a href="#">Ideate</a></li>
-                        <li><a href="#">Prototype</a></li>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Implement</a></li>
-
+    
+                        <li><a href="#Empathize">Emphathize</a></li>
+                        <li><a href="#Define">Define</a></li>
+                        <li><a href="#Ideate">Ideate</a></li>
+                        <li><a href="#Prototype">Prototype</a></li>
+                        <li><a href="#Test">Test</a></li>
+                        <li><a href="#Implement">Implement</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-burger"></i></i></a></li>
+    
                     </ul>
-                    
+    
                 </nav>
             </div>
         </header>
+        
 
         <main>
-            <Div class="container"> <!--Hero section-->
+            <Div class="container_p"> <!--Hero section-->
                 <Div><!--image-->
                     <Picture >
                         <img src="img/Animation_1_2x.gif" alt="home screen animation" >
@@ -62,14 +62,14 @@
             </Div>
 
         
-            <Div class="container"> <!--Introduction/summary section-->
+            <Div class="container_p"> <!--Introduction/summary section-->
                     <h2>Let's Get Started</h2>
                     <p>Throughout this project, I immersed myself in thorough research, iterative design, and extensive user testing to create a seamless and intuitive user experience. </p>
                     <p>Join me as I share the intricacies of my process, uncovering valuable insights, design decisions, and the transformative impact on user satisfaction.</p>
                     <p>Dive into the journey behind PlutoPay's evolution into a user-centric and efficient digital wallet solution, crafted with passion and dedication.</p>
-
-                    <div> <!--summary row 1-->
-                        <div><!--Emphatize-->
+                <div class="summary_cards">
+                    
+                        <div class="sum_card"><!--Emphatize-->
                             <div>
                                 <H3><a href="#">Emphathize</a></H3>
                             </div>
@@ -89,7 +89,7 @@
                             </div>
 
                         </div>
-                        <div><!--Define-->
+                        <div class="sum_card"><!--Define-->
                             <div>
                                 <H3><a href="#">Define</a></H3>
                             </div>
@@ -99,7 +99,7 @@
                             </div>
 
                         </div>
-                        <div><!--Ideate-->
+                        <div class="sum_card"><!--Ideate-->
                             <div>
                                 <H3><a href="#">Ideate</a></H3>
                             </div>
@@ -111,10 +111,10 @@
 
                         </div>
                 
-                    </div>
+                    
 
-                    <div> <!--summary row 2-->
-                        <div><!--Prototype-->
+                    
+                        <div class="sum_card"><!--Prototype-->
                             <div>
                                 <H3><a href="#">Prototype</a></H3>
                             </div>
@@ -129,7 +129,7 @@
                             </div>
 
                         </div>
-                        <div><!--Test-->
+                        <div class="sum_card"><!--Test-->
                             <div>
                                 <H3><a href="#">Test</a></H3>
                             </div>
@@ -139,7 +139,7 @@
                             </div>
 
                         </div>
-                        <div><!--Implement-->
+                        <div class="sum_card"><!--Implement-->
                             <div>
                                 <H3><a href="#">Implement</a></H3>
                             </div>
@@ -151,11 +151,11 @@
 
                         </div>
                 
-                    </div>
-
+                    
+                </div>
             </Div>
 
-            <div class="container" id="Empathize"><!--Empathize Section-->
+            <div class="container_p" id="Empathize"><!--Empathize Section-->
                 <h2>Empathize</h2>
                 <div>
                     <h3>Competitive Analysis</h3>
@@ -244,7 +244,7 @@
                 </div>
             </div>
 
-            <div class="container" id="Define"> <!--define Section-->
+            <div class="container_p" id="Define"> <!--define Section-->
                 <h2>Define</h2>
                 <div>
                 <h3>User Interviews</h3>
@@ -286,7 +286,7 @@
 
             </div>
 
-            <div class="container" id="Ideate"><!--Ideate Section-->
+            <div class="container_p" id="Ideate"><!--Ideate Section-->
                 <h2>Ideate</h2>
                 <h3>Card Sorting and Sitemaps</h3>
 
@@ -301,7 +301,7 @@ I used a similarity matrix to interpret the data, which illustrates the relation
 
             </div>
 
-            <div class="container" id="Prototype"><!--Prototype Section-->
+            <div class="container_p" id="Prototype"><!--Prototype Section-->
                 <h2>Prototype</h2>
                 <p>The next hurdle was to transform the flows into practical wireframes. This crucial step involved distilling all the data into meaningful information that users could easily digest. My aim was to create an effortless and hassle-free experience when it came to navigation and finding information.To achieve this, I had to keep the number of screens to a minimum. This meant creating numerous wireframe variations, where different features and functions were combined, in order to determine which ones performed better than others.I was aware of the potential of overwhelming the user. Balancing this concern, I strove to minimize the risk without compromising any essential features or critical information. It was a delicate balancing act to ensure a user-friendly experience while retaining the necessary functionality.</p>
                 <h3>Wireframes</h3>
@@ -323,7 +323,7 @@ I used a similarity matrix to interpret the data, which illustrates the relation
                 </div>
             </div>
             
-            <div class="container" id="Test"><!--Prototype Section-->
+            <div class="container_p" id="Test"><!--Prototype Section-->
                 <h2>Test</h2>
                 <h3>Usability Tests</h3>
                 <p>During the usability testing phase, a series of carefully planned tests were conducted to assess the effectiveness, efficiency, and overall user experience of our design. Real users were engaged in interactive sessions, where they performed specific tasks and provided valuable feedback. The tests helped identify pain points, usability issues, and areas for improvement, allowing us to iterate and refine the design to ensure optimal usability and user satisfaction. The insights gathered from these tests were invaluable in guiding our decision-making and ultimately enhancing the usability of our product.</p>
@@ -335,7 +335,7 @@ I used a similarity matrix to interpret the data, which illustrates the relation
 
             </div>
             
-            <div class="container" id="Implement"><!--Implement Section-->
+            <div class="container_p" id="Implement"><!--Implement Section-->
                 <h2>Implement</h2>
                 <div>
                      <img src="img/Style_Guide.jpg" alt="Style guide document">
@@ -346,7 +346,7 @@ I used a similarity matrix to interpret the data, which illustrates the relation
             
             </div>
 
-            <div class="container" id="Final Results"> <!--Results Section-->
+            <div class="container_p" id="Final Results"> <!--Results Section-->
                 <div><!--photo grid?-->
                     <img src="img/mockup_1_2x.jpg" alt="mockup 1">
                     <img src="img/mockup_2_2x.png" alt="mockup 2">
