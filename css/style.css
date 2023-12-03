@@ -194,7 +194,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #606060;
 }
 
 
@@ -202,7 +202,7 @@ nav > ul > li > a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #838383;
 
 }
 
@@ -210,7 +210,7 @@ nav > ul > li > a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 900;
-  color: #4a4a4a;
+  color: #b4b4b4;
 }
 
 nav > ul > li > a:visited {
@@ -218,7 +218,7 @@ nav > ul > li > a:visited {
   text-transform: uppercase;
   font-weight: 700;
   border: 1px solid whitesmoke;
-  color: #565656;
+  color: #6b6b6b;
 }
 
 
@@ -262,17 +262,20 @@ main {
   margin-top: 20px;
 }v
 
+picture.portrait{
+max-width: 300px;
+}  
+
 
 
 
 
 /*project section*/
 .project-card {
-display: flex;
-flex-direction: column;
-margin-bottom: 15px;
-
+  margin-bottom: 15px;
 }
+
+
 
 
 /*project page*/
@@ -450,6 +453,33 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
+
+  }
+
+  .hero {
+    background-color: #1a1a1a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%; 
+    column-gap: 20px;
+  
+  }
+  
+  .hero img {
+    width: 30vw;
+    max-width: 4ovw;
+    justify-content: center;
+
+
+  }
+
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    background-color: #1a1a1a;
+    padding: 20px;
   }
 
   .container_p {
@@ -510,11 +540,7 @@ Large devices (1024px or larger)
 
 
   }
-  .project-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-  }
+ 
   
 
   .row {
