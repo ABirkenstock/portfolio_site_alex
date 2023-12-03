@@ -504,7 +504,7 @@ Large devices (1024px or larger)
 
   .hero img {
     width: 30vw;
-    max-width: 4ovw
+    max-width: 4ovw;
     justify-content: center;
     
 
@@ -544,6 +544,7 @@ Large devices (1024px or larger)
   display: flex;
  flex-direction: row;
  flex-wrap: nowrap;
+ justify-content: center;
   
   
 }
