@@ -250,7 +250,19 @@ nav > ul > li > a:visited {
   padding: 0 0 10px;
 }
 
+.project-home {
+  display: block;
+  justify-content: right;
 
+
+}
+
+.button .project-home  {
+position: fixed;
+z-index: 5;
+
+
+}
   
 
 
