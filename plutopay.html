@@ -25,42 +25,55 @@
     <body>
         <header class="nav-header">
             <div class="container">
-                <div class="navtoggle" id="myNavtoggle">
-                    <img class="logo" src="img/PlutoPay.svg" alt="PlutoPay" >
-              
+              <div class="navtoggle" id="myNavtoggle">
+                <img class="logo" src="img/logo.svg" alt="Alex Birkenstock" />
+      
                 <nav>
-                    <ul>
-    
+                  <ul>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contatct</a></li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="icon"
+                        onclick="menuToggle()"
+                        ><i class="fa-solid fa-burger"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </header>
+
+        <div> <!--sidebar-->
+            <div class="side-bar">
+                <nav class="navigation">
+                  <ul>
+                    <li>
                         <li><a href="#Empathize">Emphathize</a></li>
                         <li><a href="#Define">Define</a></li>
                         <li><a href="#Ideate">Ideate</a></li>
                         <li><a href="#Prototype">Prototype</a></li>
                         <li><a href="#Test">Test</a></li>
                         <li><a href="#Implement">Implement</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-burger"></i></a></li>
-    
-                    </ul>
-
-
-                   
+                    </li>
+                  </ul>
                 </nav>
-                
-                
-                <div class="project-home">
-                    <a class="button project-home" href="index.html">home</a>
-                </div>
-               
-    
-                </div>
-               
-            </div>
-        </header>
+              </div>
+            
+              
+
+
+
+        </div>
         
     
         
 
         <main>
-            <div class="container_p"> <!--Hero section-->
+            <div class="container_p" id="Hero"> <!--Hero section-->
                 <div><!--image-->
                     <picture >
                         <img src="img/Animation_1_2x.gif" alt="home screen animation" >
@@ -136,10 +149,7 @@
                                     Building upon the ideation phase, tangible prototypes were developed to bring the ideas to life and facilitate iterative improvements through feedback and testing.</p>
                                 </div>
                             </div>
-                            
-
-                       
-                            
+                           
 
                         
                         <div class="sum_card"><!--Test-->
