@@ -103,6 +103,13 @@ a:active { /* selected link */
   color: #1a1a1a;
 }
 
+.button.download {
+  color: #1a1a1a;
+}
+
+.button.download:visited {
+  color: #1a1a1a;
+}
 
 .button.contact {
   background-color: transparent;
@@ -115,7 +122,6 @@ a:active { /* selected link */
   background-color: #1a1a1a;
   color: #a59671;
 }
-
 
 /* Layout styling */
 
@@ -185,6 +191,7 @@ nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  color: #808080;
 }
 
 
@@ -194,7 +201,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #606060;
+  color: #808080;
 }
 
 
@@ -202,7 +209,7 @@ nav > ul > li > a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #838383;
+  color: #808080;
 
 }
 
@@ -210,7 +217,7 @@ nav > ul > li > a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 900;
-  color: #b4b4b4;
+  color: #c2c2c2;
 }
 
 nav > ul > li > a:visited {
@@ -218,7 +225,7 @@ nav > ul > li > a:visited {
   text-transform: uppercase;
   font-weight: 700;
   border: 1px solid whitesmoke;
-  color: #6b6b6b;
+  
 }
 
 

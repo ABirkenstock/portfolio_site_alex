@@ -1,184 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width inital-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width inital-scale=1" />
     <title>Alex Birkenstock - Portfolio</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-    <link rel="stylesheet" href="https://use.typekit.net/znx1gcg.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/znx1gcg.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="https://kit.fontawesome.com/03340777f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
 
-</head>
+    <script
+      src="https://kit.fontawesome.com/03340777f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header class="nav-header">
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <img class="logo" src="img/logo.svg" alt="Alex Birkenstock" >
-          
-            <nav>
-                <ul>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="logo" src="img/logo.svg" alt="Alex Birkenstock" />
 
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contatct</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-burger"></i></i></a></li>
-
-                </ul>
-
-            </nav>
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contatct</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fa-solid fa-burger"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
 
     <main>
-        <div class="container hero"> <!--Hero section-->
+      <div class="container hero">
+        <!--Hero section-->
+        <div>
+          <div>
+            <h1>
+              Hey there,<br />
+              <span>I'm Alex</span>
+            </h1>
+          </div>
+          <div>
+            <p>
+              I'm a product designer based in Berlin, Germany. <br />
+              I'm passionate about crafting emotion-driven user stories and
+              delivering exceptional user experiences
+            </p>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/alex-birkenstock"
+              >My LinkedIn</a
+            >
+          </div>
+        </div>
+
+        <div>
+          <picture class="portrait">
+            <source srcset="img/Portrait_1x.png" media="(max-width:767px)" />
+            <img src="img/Portrait_2x.png" alt="portrait of Alex" />
+          </picture>
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <!--about section-->
+          <div>
             <div>
-                <div>
-                    <h1>Hey there,<br>
-                        <span>I'm Alex</span>
-                    </h1>
-                </div>
-                <div>
-                    <p>I'm a product designer based in Berlin, Germany. <br>
-                        I'm passionate about crafting emotion-driven user stories
-                        and delivering exceptional user experiences</p>
-                </div>
-                <div><a href="https://www.linkedin.com/in/alex-birkenstock">My LinkedIn</a></div>
-
-
+              <h3>A little about me</h3>
             </div>
-
             <div>
-                <picture class="portrait">
-                    <source srcset="img/Portrait_1x.png" media="(max-width:767px)">
-                    <img src="img/Portrait_2x.png" alt="portrait of Alex">
+              <p>
+                I'm a problem solver and storyteller, dedicated to creating
+                exceptional product experiences. Through my experience as a
+                creative producer and digital art assistant, I’ve successfully
+                translated complex concepts into engaging narratives. In those
+                jobs, my work environment was always changing and tasks would be
+                different every day, from graphic design tasks, shooting and
+                editing videos, to helping students and staff with IT problems.
+                Through that, adaptability became the core of my work, allowing
+                me to respond flexibly, even in situations outside of my comfort
+                zone. Through that I create impactful and unforgettable
+                experiences
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h3>My Design Process</h3>
+            </div>
+            <div>
+              My design process is rooted in a deep understanding of the user. I
+              begin by conducting thorough user research to uncover valuable
+              insights and define user personas. From there, I create wireframes
+              and interactive prototypes to visualize the user flow and iterate
+              on design solutions. Usability testing and feedback analysis are
+              integral parts of my process, allowing me to refine and optimize
+              designs for maximum impact.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <!--Project section-->
+          <div id="projects">
+            <h2>My Projects</h2>
+            <div class="project-card">
+              <!--Project 1-->
+              <div class="project-card--picture">
+                <!--Column 1-->
+                <picture>
+                  <source
+                    srcset="img/PlutoPay_1x.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img src="img/PlutoPay_2x.jpg" alt="project picture" />
                 </picture>
+              </div>
+              <div class="project-card--text">
+                <!--Column 2-->
+                <h3>Pluto Pay - Case Study</h3>
+                <p>
+                  Discover the power of PlutoPay, the ultimate banking and
+                  wallet app that puts you in the driver`s seat of your
+                  financial journey. We`ve partnered with banks to uncover
+                  hidden fees and expose dark patterns, ensuring that you stay
+                  informed and in control. Throughout this project, I immersed
+                  myself in thorough research, iterative design, and extensive
+                  user testing to create a seamless and intuitive user
+                  experience. Dive into the journey behind PlutoPay`s evolution
+                  into a user-centric and efficient digital wallet solution,
+                  crafted with passion and dedication.
+                </p>
+                <a href="plutopay.html" class="button">View case study</a>
+              </div>
             </div>
+
+            <div class="project-card">
+              <!--Project 2-->
+              <div class="project-card--picture">
+                <!--Column 1-->
+                <picture>
+                  <source
+                    srcset="img/Kinderbuchseminar_1x.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/Kinderbuchseminar_2x.jpg"
+                    alt="project picture"
+                  />
+                </picture>
+              </div>
+              <div class="project-card--text">
+                <!--Column 2-->
+                <h3>
+                  Kinderbuchseminar - <br />
+                  Responsive One Pager
+                </h3>
+                <p>
+                  I worked closely with the founders of this project and
+                  developed a streamlined sign-up process that prioritized
+                  accessibility and delivered a seamless experience for users.
+                  Thorough user research, I identified an optimal user flow,
+                  ensuring intuitive navigation and ease of use.
+                </p>
+                <a href="http://kinderbuchseminar.de/" target="_blank"
+                  >View website here</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="container">
-            <div> <!--about section-->
-                <div>
-                    <div>
-                        <h3>A little about me</h3>
-                    </div>
-                    <div>
-                        <p>I'm a problem solver and storyteller, dedicated to creating exceptional product experiences.
-                            Through my experience as a creative producer and digital art assistant, I’ve successfully
-                            translated complex concepts into engaging narratives. In those jobs, my work environment was
-                            always changing and tasks would be different every day, from graphic design tasks, shooting
-                            and editing videos, to helping students and staff with IT problems. Through that,
-                            adaptability became the core of my work, allowing me to respond flexibly, even in situations
-                            outside of my comfort zone. Through that I create impactful and unforgettable experiences
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h3>My Design Process</h3>
-                    </div>
-                    <div>My design process is rooted in a deep understanding of the user. I begin by conducting thorough
-                        user research to uncover valuable insights and define user personas. From there, I create
-                        wireframes and interactive prototypes to visualize the user flow and iterate on design
-                        solutions. Usability testing and feedback analysis are integral parts of my process, allowing me
-                        to refine and optimize designs for maximum impact.</div>
-                </div>
-            </div>
-
-            <div> <!--Project section-->
-                <div id="projects">
-                    <h2>My Projects</h2>
-                    <div class="project-card"> <!--Project 1-->
-                        <div class="project-card--picture"><!--Column 1-->
-                            <Picture>
-                                <source srcset="img/PlutoPay_1x.jpg" media="(max-width:767px)">
-                                <img src="img/PlutoPay_2x.jpg" alt="project picture">
-                            </Picture>
-                        </div>
-                        <div class="project-card--text"><!--Column 2-->
-                            <h3>Pluto Pay - Case Study</h3>
-                            <p>Discover the power of PlutoPay, the ultimate banking and wallet app that puts you in the
-                                driver’s seat of your financial journey. We’ve partnered with banks to uncover hidden
-                                fees and expose dark patterns, ensuring that you stay informed and in control.
-
-                                Throughout this project, I immersed myself in thorough research, iterative design, and
-                                extensive user testing to create a seamless and intuitive user experience.
-                                Dive into the journey behind PlutoPay’s evolution into a user-centric and efficient
-                                digital wallet solution, crafted with passion and dedication.</p>
-                            <a href="plutopay.html" class="button">View case study</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card"><!--Project 2-->
-                        <div class="project-card--picture"><!--Column 1-->
-                            <Picture>
-                                <source srcset="img/Kinderbuchseminar_1x.jpg" media="(max-width:767px)">
-                                <img src="img/Kinderbuchseminar_2x.jpg" alt="project picture">
-                            </Picture>
-                        </div>
-                        <div class="project-card--text"><!--Column 2-->
-                            <h3>Kinderbuchseminar - <br>
-                                Responsive One Pager</h3>
-                            <p>I worked closely with the founders of this project and developed a streamlined sign-up
-                                process that prioritized accessibility and delivered a seamless experience for users.
-                                Thorough user research, I identified an optimal user flow, ensuring intuitive navigation
-                                and ease of use. </p>
-                            <a href="http://kinderbuchseminar.de/" target="_blank">View website here</a>
-                        </div>
-
-                       
-                        </div>
-                       
-
-                </div>
-            </div>
-        </div>
-        </div> <!--END container-->
+      </div>
+      <!--END container-->
     </main>
 
     <footer id="contact">
-        <div class="footer">
-            <h2>Get in touch</h2>
-            <p>Send me an <span><a href="mailto:alex@uphor.city" class="button contact">email</a></span><br>
-                or follow me on <span><a href="https://www.linkedin.com/in/alex-birkenstock">LinkedIn</a></span></p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/alex-birkenstock">
-                        <img src="img/linkedin.svg">
-                    </a></li>
+      <div class="footer">
+        <h2>Get in touch</h2>
+        <p>
+          Send me an
+          <span
+            ><a href="mailto:alex@uphor.city" class="button contact"
+              >email</a
+            ></span
+          ><br />
+          or follow me on
+          <span
+            ><a href="https://www.linkedin.com/in/alex-birkenstock"
+              >LinkedIn</a
+            ></span
+          >
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/alex-birkenstock">
+              <img src="img/linkedin.svg" />
+            </a>
+          </li>
 
-                <li><a href="mailto:alex@uphor.city">
-                        <img src="img/email.svg">
-                    </a> </li>
+          <li>
+            <a href="mailto:alex@uphor.city">
+              <img src="img/email.svg" />
+            </a>
+          </li>
 
-                <li><a href="https://instagram.com/alexuphor">
-                        <img src="img/instagram.svg">
-                    </a></li>
-            </ul>
-        </div>
-        <div>
-            <p>Copyright David Birkenstock 2023</p>
-        </div>
-        </div>
+          <li>
+            <a href="https://instagram.com/alexuphor">
+              <img src="img/instagram.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p>Copyright David Birkenstock 2023</p>
+      </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scripts.js"></script>
-</body>
-
-
-
-
+  </body>
 </html>
